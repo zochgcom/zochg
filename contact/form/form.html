@@ -1,0 +1,52 @@
+<!-- feedback form form -->
+<style>
+
+#form {
+background-color: #505050;
+border: 5px solid black;
+border-radius: 8px;
+margin-right: 12%;
+margin-left: 12%;
+
+overflow: auto
+}
+
+::-webkit-scrollbar {
+
+opacity: 0;
+height: 10px;
+width: 5px;
+border-radius: 100px;
+padding-right: 20px;
+cursor:url(curs.png);
+
+}
+
+::-webkit-scrollbar-thumb {
+
+background-color: gray;
+border-radius: 100px;
+cursor:url(curs.png);
+
+}
+
+</style>
+<div id="form">
+<br>
+		<form  action="https://formspree.io/zochggamesmail@gmail.com" method="post" style="text-align:center">
+		<input type = "text" name="Name" value="" placeholder="Your Name" style="width:50%"/>
+		<br>
+		<input type = "text" name="Email" value="" placeholder="Your Email" style="width:50%"/>
+		<br>
+		<input type = "text" name="Subject" value="" placeholder="Subject" style="width:50%"/>
+		<br>
+		<br>
+		<label style="color:white">Your Suggestion/Feedback</label> <br>
+		<br>
+		<textarea name="msg" placeholder="Type your text here..." style="height:80px; width:50%; border-radius: 15px
+	border: 0px; resize: none; overflow: auto;"></textarea>
+		<br>
+		<input type="submit" id="send" value="Submit Feedback"/>
+		</form>
+		<h3><?php include "secure_email_code.php"?></h3> 
+		</div>

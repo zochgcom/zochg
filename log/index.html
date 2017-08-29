@@ -1,0 +1,581 @@
+<html><head>
+<title>Zochg</title>
+<link rel="shortcut icon" href="lol.ico"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.log {
+
+text-align: center;
+border-radius: 8px;
+border: 2px solid black;
+background-color: #111111;
+margin-left: 50px;
+margin-right: 50px;
+height: auto;
+padding: 10px;
+margin-bottom: 5px;
+margin-top: 5px;
+
+}
+
+#jar-clicker {
+margin-top: 150px;
+}
+
+.log-title {
+
+color: white;
+
+}
+
+html {
+
+cursor:url(curs.png), auto;
+
+}
+
+a {
+
+cursor:url(curs2.png), auto;
+
+}
+
+.header {
+color: white;
+}
+
+@keyframes zoom {
+from {-webkit-transform: scale(0)} 
+to {-webkit-transform: scale(1)}
+}
+
+::-webkit-scrollbar {
+display:none;
+}
+
+#error {
+
+animation-name: zoom;
+animation-duration: 0.6s;
+
+font-family: sans-serif;
+z-index: 99000;
+position: fixed;
+top: 20%;
+display: none;
+text-align: center;
+background-color: white;
+border: 1px solid red;
+
+border-radius: 25px;
+
+width: 75%;
+position: fixed;
+left: 50%;
+margin-left: -37.5%;
+height: 50%;
+
+overflow: auto
+}
+
+#darke {
+display: none;
+position: fixed;
+z-index: 1999;
+width: 100%;
+height: 100%;
+margin: -8.3px;
+}
+
+#inside {
+position: relative;
+top: 5px;
+font-family: sans-serif;
+text-align: center;
+padding: 0px;
+width: 100%;
+display: none;
+}
+
+.header {
+position: fixed;
+top: -8px;
+background-color: #111111;
+text-align: center;
+width: 100%;
+margin: -8.5px;
+font-family: sans-serif;
+font-size: 20px;
+}
+
+		.a-yellow:hover {
+         color: yellow;
+      }	
+	  
+	  .a-orange:hover {
+         color: orange;
+      }	
+	  
+	  .a-red:hover {
+         color: red;
+      }	
+	  
+	  .a-blue:hover {
+         color: blue;
+      }	
+	  
+	  .a-purple:hover {
+         color: purple;
+      }	
+	  
+	  .a-green:hover {
+         color: green;
+      }
+
+a {
+		-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		
+		text-decoration: none;
+		color: inherit;
+		-webkit-transition: all 0.5s ease;
+	}
+	
+		a:hover {
+         color: white;
+      }
+
+#test {
+
+animation-name: zoom;
+animation-duration: 0.6s;
+
+font-family: sans-serif;
+z-index: 41;
+position: fixed;
+top: 20%;
+bottom: 50%;
+
+display: none;
+text-align: center;
+background-color: white;
+
+border-radius: 25px;
+
+width: 75%;
+position: fixed;
+left: 50%;
+margin-left: -37.5%;
+height: 50%;
+
+overflow: auto
+}
+
+#dark {
+display: none;
+position: fixed;
+top: 0px;
+z-index: 40;
+width: 200%;
+height: 200%;
+margin: -8.3px;
+}
+
+#user {
+position: relative;
+top: 5px;
+font-family: sans-serif;
+text-align: center;
+padding: 0px;
+width: 100%;
+}
+
+ul, ol {
+list-style-type: none;
+margin: 0px;
+padding: 0px;
+}
+
+#password, #name {
+width: 80%;
+}
+
+#npassword, #renpassword, #nname {
+width: 80%;
+}
+
+#splitter {
+background-color: gray;
+width: 100%;
+height: 1px;
+margin-top: 25px;
+}
+
+#about {
+animation-name: zoom;
+animation-duration: 0.6s;
+
+font-family: sans-serif;
+z-index: 41;
+position: fixed;
+top: 20%;
+bottom: 50%;
+display: none;
+text-align: center;
+background-color: white;
+
+border-radius: 25px;
+
+width: 75%;
+position: fixed;
+left: 50%;
+margin-left: -37.5%;
+height: 50%;
+
+overflow: auto
+}
+
+@media all and (orientation:landscape) {
+#un {
+font-size: 90%;
+}
+#un2 {
+font-size: 180%;
+}
+}
+
+@media all and (orientation:portrait) {
+#un {
+font-size: 90%;
+}
+#un2 {
+font-size: 180%;
+}
+}
+
+
+#insides {
+position: bottom;
+top: 150px;
+z-index: 1;
+width: 100%
+height: 100%
+margin: -8.5px;
+}
+
+#troll {
+text-align: baseline;
+color: inherit;
+position: fixed;
+display: none;
+}
+
+#gc {
+position: default;
+top: 150px;
+}
+
+#un {
+
+		-moz-transition: color 0.2s ease-in-out, margin 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		-webkit-transition: color 0.2s ease-in-out, margin 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		-ms-transition: color 0.2s ease-in-out, margin 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		transition: color 0.2s ease-in-out, margin 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+
+border-bottom: 5px solid white;
+margin-left: 100px;
+margin-right: 100px;
+}
+
+#un:hover {
+border-bottom: 6px solid orange;
+margin-left: 80px;
+margin-right: 80px;
+}
+
+#un2 {
+margin-bottom: 0px;
+}
+
+#add {
+color: #44ff44;
+}
+
+#rem {
+color: red;
+}
+
+#com {
+color: gray;
+}
+
+#les {
+color: peru;
+}
+
+#mor {
+color: yellow;
+}
+
+body {
+background-color: #222222;
+}
+
+</style>
+</head>
+
+<body>
+<div class="header">
+<h2 id="un2"><a class="a-orange" href="contact.html" title="Contact us">Zochg</a></h2>
+<p id="un"><a href=".." class="a-orange">Home</a> | <a href="#" class="a-orange">Jar Clicker</a> | <a href="#egar" class="a-orange">Evolution Cells</a> | <a href="#pkay" class="a-orange">Pe'Kay</a></p>
+</div>
+
+<div class="log" id="jar-clicker">
+<h1 class="log-title">Jar Clicker</h3>
+<ul>
+<li><p id="add">* Updated HTML for website</p></li>
+</ul>
+<br>
+<h2 class="log-title">To Come (JC)</h3>
+<ul>
+<li><p id="les">* Updated graphics [42%]</p></li>
+<li><p id="com">* More upgrades</p></li>
+<li><p id="com">* Proper english</p></li>
+</ul>
+</div>
+
+<div class="log">
+<h1 class="log-title" id="egar">Evolution Cells</h3>
+<ul>
+<li><p id="add">* Updated HTML</p></li>
+</ul>
+<br>
+<h2 class="log-title">To Come (EC)</h3>
+<ul>
+<li><p id="com" id="pkay">* Shop</p></li>
+<li><p id="com">* More gameplay</p></li>
+<li><p id="com">* Epillipsy mode and non-epillipsy mode</p></li>
+</ul>
+</div>
+
+<div class="log" id="pkay">
+<h1 class="log-title">Pe'Kay</h3>
+<ul>
+<li><p id="add">* Added Battleling </p></li>
+</ul>
+<br>
+<h2 class="log-title">To Come (PK)</h3>
+<ul>
+<li><p id="com">* Shop</p></li>
+<li><p id="com">* More gameplay</p></li>
+<li><p id="com">* Coins not reseting after battleing</p></li>
+<li><p id="com">* More Monsters</p></li>
+<li><p id="com">* Saving</p></li>
+<li><p id="com">* Better Battleing</p></li>
+</ul>
+</div>
+
+<div id="darke">
+</div>
+<div id="error">
+<h3 style="width: 100%; height: 60px; background-color: red; margin-top: -0px; margin-bottom: -50px; color: white;">Error!</h3>
+<p style="color: white;">Something went wrong!</p>
+<div id="inside">
+<ul id="inside">
+<p id="errDesc">If you see this then theres and error inside and error :P</p>
+</ul>
+</div>
+</div>
+
+
+<div id="dark" style="display: none;">
+</div>
+<div id="test" style="display: none;">
+<h3 style="width: 100%; height: 60px; background-color: #111111; margin-top: -0px; margin-bottom: -50px; color: white;">Online Games</h3>
+<p style="color: white;">Click to goto game</p>
+<ul>
+<li title="Jar Clicker"><a href="http://zochgcom.github.io/jar-clicker/" class="a-orange" id="pjc"><p>Play Jar Clicker</p>
+<img src="New_jar.png" width="50px" height="50px"></a>
+
+</li>
+
+<li title="Evolution Cell"><a href="http://zochgcom.github.io/egar/" class="a-orange" id="eg"><p>Play Evolution Cell</p>
+<img src="egar.png" width="50px" height="50px"></a>
+
+</li>
+
+</ul>
+</div>
+
+<div style="display: none;">
+<div id="user">
+<ul id="user">
+<input type="email" id="name" placeholder="Name / Email">
+<br>
+
+<input type="password" id="password" placeholder="Password">
+<br>
+<button type="submit" id="log">Login</button>
+</ul>
+<div id="splitter"></div>
+<div id="signup">
+<ul id="user">
+<input type="email" id="nname" placeholder="Name / Email">
+<br>
+
+<input type="password" id="npassword" placeholder="Password">
+<input type="password" id="renpassword" placeholder="Retype password">
+<br>
+<button type="submit" id="signup">Signup</button>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div id="about" style="display: none;">
+<h3 style="width: 100%; height: 60px; background-color: #111111; margin-top: -0px; margin-bottom: -50px; color: white;" >Download</h3>
+<p style="color: white;">Here you can download our wierd games</p>
+<ul>
+<li title="Download Pe'Kay"><a href="http://download987.mediafireuserdownload.com/g8o2hpww4t8g/pkv9mhmf64cfr6m/Pe%5C%27Kay.zip" download class="a-orange" id="pka"><p>Download Pe'Kay</p></a>
+<!--pekay tinyurl picture-->
+<img src="https://tinyurl.com/ybjstzvn">
+
+</li>
+
+</ul>
+</div>
+
+<ul class="log">
+ <li><span id="add">* Added</span></li>
+ <li><span id="rem">* Removed</span> </li>
+ <li><span id="com">* Coming</span> </li>
+ <li><span id="les">* Less than 50% done</span></li> 
+ <li><span id="mor">* More than 50% done</span> </li>
+</ul>
+
+<script>
+var log = document.getElementById("log");
+
+var pka = document.getElementById("pka");
+
+var btn = document.getElementById("login");
+
+var btn2 = document.getElementById("bout");
+var bout = document.getElementById("about");
+
+var dark = document.getElementById("dark");
+
+var test =  document.getElementById("test");
+
+var open = false;
+var open2 = false;
+var error = false;
+
+/*pka.onclick = function() {nu()}
+
+function nu() {
+alert("not working rn");
+}*/
+
+btn.onclick = function() {login()};
+
+dark.onclick = function() {close()};
+
+log.onclick = function() {log()};
+
+btn2.onclick = function() {about()};
+
+function login() {
+
+
+if (open == false) {
+test.style.display = "block";
+dark.style.display = "block";
+
+document.getElementById("dark").style.backgroundColor = "#000000";
+document.getElementById("dark").style.opacity = "0.25";
+open = true;
+
+} else {
+
+test.style.display = "none";
+dark.style.display = "none";
+
+open = false
+
+}
+
+}
+
+function close() {
+
+test.style.display = "none";
+dark.style.display = "none";
+bout.style.display = "none";
+
+open = false
+open2 = false
+
+}
+
+function log() {
+
+var naem = document.getElementById("name").value;
+
+var pass = document.getElementById("password").value;
+
+if (naem == "admin") {
+window.location = "http://zochg.ga";
+
+} else {
+
+alert("wrong");
+
+}
+}
+
+function about() {
+
+
+if (open2 == false) {
+bout.style.display = "block";
+dark.style.display = "block";
+
+
+document.getElementById("dark").style.backgroundColor = "#000000";
+document.getElementById("dark").style.opacity = "0.25";
+
+open2 = true;
+
+} else {
+
+bout.style.display = "none";
+dark.style.display = "none";
+
+open2 = false
+
+}
+
+}
+
+var err = document.getElementById("errDesc");
+
+if (error == true) {
+
+test.style.display = "none";
+bout.style.display = "none";
+
+document.getElementById("error").style.display = "block";
+document.getElementById("darke").style.display = "block";
+err.innerHTML = "an error has occured";
+}
+
+</script>
+
+
+</body></html>
