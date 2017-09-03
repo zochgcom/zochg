@@ -1,0 +1,71 @@
+<body>
+
+<style>
+body {
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+text-align: center;
+margin: 0px;
+}
+
+a {
+text-decoration: none;
+color: gray;
+}
+
+h1 {
+font-size: 150px;
+color: gray;
+}
+
+#error {
+position: fixed;
+}
+</style>
+<div id="error">
+<h1 align="center">404</h1>
+<p>Page not found</p>
+</p>If you believe this is an error click <a href="contact" title="Contact us">here</a></p>
+<h2><a href="./">back</a></h2>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js"></script>
+		<script>
+
+			var camera, scene, renderer;
+			var geometry, material, mesh;
+
+			function init() {
+
+				camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 10 );
+				camera.position.z = 2;
+
+				scene = new THREE.Scene();
+				scene.background = new THREE.Color( 0xffffff );
+
+				geometry = new THREE.SphereGeometry( 1 );
+				material = new THREE.MeshBasicMaterial( { color: 0xcccccc, wireframe: true } );
+
+				mesh = new THREE.Mesh( geometry, material );
+				scene.add( mesh );
+
+				renderer = new THREE.WebGLRenderer( { antialias: true } );
+				renderer.setSize( window.innerWidth, window.innerHeight );
+				document.body.appendChild( renderer.domElement );				
+				
+			}
+
+			function animate( time ) {
+
+				mesh.rotation.x = time * 0.0005;
+				mesh.rotation.y = time * 0.001;
+
+				renderer.render( scene, camera );
+				requestAnimationFrame( animate );
+
+			}
+
+			init();
+			requestAnimationFrame( animate );
+
+		</script>
+
+</body>
