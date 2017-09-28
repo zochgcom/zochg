@@ -9,6 +9,18 @@ https://github.com/Team-Code/KA_Offline -->
 	
 	<style>
 	
+	@font-face {
+    font-family: 'trench';
+    src: local('Trench');
+    src: url('trench.eot');
+    src: url('trench.eot?#iefix') format('embedded-opentype'),
+         url('trench.woff') format('woff'),
+         url('trench.ttf') format('truetype'),
+         url('trench.svg#blissmediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+	
 	#HeadlineJ {
 	
 	text-align: center;
@@ -358,13 +370,16 @@ color: gray;
 body {
 background-color: #222222;
 }
-		
-		
-		<!-- End of Header -->
 	
+button {
+padding: 5px;
+background-color: #444444;
+border-radius: 2px;
+border: 1px solid gray;
+color: white;
+}
 	
-	
-	</style>
+</style>
 </head>
  <body>
 
@@ -386,7 +401,11 @@ background-color: #222222;
     <p align="center"> 
 	<!--This draws the Canvas on the webpage -->
       <embed id="canvas" width="480" height="320" src="game.swf" quality="low" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash">
-    </p>
+    <br><br>
+	<span style="font-family: 'trench', sans-serif;"><b>Wan't to play offline?</b></span>
+	<br>
+	<a href="./RIG.exe" download><button id="download" title="Download RIG.exe">DOWNLOAD <span style="color: gray;">RIG.exe 1.2mb</span></button></a>
+	</p>
 <p class="Copyright">© 2014 - 2016 Zochg inc. all rights reserved</p>
 
  </body>
