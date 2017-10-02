@@ -412,7 +412,7 @@ color: white;
 Music is not available in your browser.
 </audio>
 
-	 <button id="playBtn">Pause music</button>
+	 <button id="playBtn" align="center">Pause music</button>
 	 
 	 
 <p class="Copyright">© 2014 - 2016 Zochg inc. all rights reserved</p>
@@ -425,7 +425,7 @@ function playPause() {
     if (myVideo.paused) 
         myVideo.play(); 
 	play.innerHTML = "Pause music";
-    else 
+} else { 
         myVideo.pause(); 
 	play.innerHTML = "Play music";
 }
