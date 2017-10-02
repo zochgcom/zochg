@@ -411,8 +411,9 @@ color: white;
   <source src="music.mp3" type="audio/mpeg" id="audio">
 Music is not available in your browser.
 </audio>
-
-	 <button id="playBtn" align="center">Pause music</button>
+	
+	
+	 <button id="playBtn" style="text-align: center">Pause music</button>
 	 
 	 
 <p class="Copyright">© 2014 - 2016 Zochg inc. all rights reserved</p>
@@ -422,12 +423,13 @@ var myVideo = document.getElementById("audio");
 var play = document.getElementById("playBtn"); 
 		 
 function playPause() { 
-    if (myVideo.paused) 
+    if (myVideo.paused) {
         myVideo.play(); 
 	play.innerHTML = "Pause music";
 } else { 
         myVideo.pause(); 
 	play.innerHTML = "Play music";
+}
 }
 </script>
 
