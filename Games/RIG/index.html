@@ -406,7 +406,30 @@ color: white;
 	<br>
 	<a href="./RIG.exe" download><button id="download" title="Download RIG.exe">DOWNLOAD <span style="color: gray;">RIG.exe 1.2Mb</span></button></a>
 	</p>
+
+<audio>
+  <source src="music.mp3" type="audio/mpeg" id="audio">
+Music is not available in your browser.
+</audio>
+
+	 <button id="playBtn">Pause music</button>
+	 
+	 
 <p class="Copyright">© 2014 - 2016 Zochg inc. all rights reserved</p>
+
+	 <script>
+var myVideo = document.getElementById("audio"); 
+var play = document.getElementById("playBtn"); 
+		 
+function playPause() { 
+    if (myVideo.paused) 
+        myVideo.play(); 
+	play.innerHTML = "Pause music";
+    else 
+        myVideo.pause(); 
+	play.innerHTML = "Play music";
+}
+</script>
 
  </body>
 </html>
