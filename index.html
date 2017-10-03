@@ -1,925 +1,924 @@
--<html><head>
- -<link rel="shortcut icon" href="lol.ico"/>
- -<title>         Zochg</title>
- -<meta charset="utf-8">
- -<meta name="viewport" content="width=device-width, initial-scale=1">
- -<style>
- -
- -html {
- -font-family: sans-serif;
- -	}
- -
- -#login, #bout:hover {
- -cursor: url(curs2.png), auto;
- -}
- -
- -		.s-yellow:hover {
- -         color: yellow;
- -      }	
- -	  
- -	  .s-orange:hover {
- -         color: orange;
- -      }	
- -	  
- -	  .s-red:hover {
- -         color: red;
- -      }	
- -	  
- -	  .s-blue:hover {
- -         color: blue;
- -      }	
- -	  
- -	  .s-purple:hover {
- -         color: purple;
- -      }	
- -	  
- -	  .s-green:hover {
- -         color: green;
- -      }
- -
- -span {
- -		-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
- -		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
- -		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
- -		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
- -		
- -		text-decoration: none;
- -		color: inherit;
- -	}
- -
- -button {
- -border-radius: 4px;
- -border: 2px solid gray;
- -background-color: white
- -}
- -
- -button:hover {
- -background-color: #666666; 
- -cursor: url(curs2.png), auto;
- -}
- -
- -#chatbot {
- -font-family: sans-serif;
- -  -webkit-transition: all 0.4s ease;
- -  -moz-transition: all 0.4s ease;
- -  -o-transition: all 0.4s ease;
- -  -ms-transition: all 0.4s ease;
- -  transition: all 0.4s ease;
- -border: 1px solid black;
- -border-bottom: 2px solid black;
- -border-radius: 6px;
- -background-color: #444444;
- -padding: 5px;
- -position: fixed;
- -z-index: 5;
- -right: 0;
- -bottom: -150px;
- -width: 216px;
- -height: 160px;
- -}
- -
- -#name {
- -width: 171px;
- -margin-top: 0px;
- -margin-bottom: 50px;
- -}
- -
- -#send {
- -width: 45px;
- -margin-top: 0px;
- -margin-bottom: 50px;
- -}
- -
- -#cp {
- -
- -position: fixed;
- -bottom: -5px;
- -opacity: 0.75;
- -background-color: #999999;
- -border-radius: 4px
- -
- -}
- -
- -html {
- -
- -cursor:url(curs.png), auto;
- -
- -}
- -
- -a {
- -
- -cursor:url(curs2.png), auto;
- -
- -}
- -
- -.header {
- -color: white;
- -}
- -
- -@keyframes zoom {
- -from {-webkit-transform: scale(0)} 
- -to {-webkit-transform: scale(1)}
- -}
- -
- -::-webkit-scrollbar {
- -
- -display: none
- -
- -}
- -
- -::-webkit-scrollbar-thumb {
- -
- -display: none;
- -
- -}
- -
- -#error {
- -
- -animation-name: zoom;
- -animation-duration: 0.6s;
- -
- -font-family: sans-serif;
- -z-index: 99000;
- -position: fixed;
- -top: 20%;
- -display: none;
- -text-align: center;
- -background-color: white;
- -border: 1px solid red;
- -
- -border-radius: 25px;
- -
- -width: 75%;
- -position: fixed;
- -left: 50%;
- -margin-left: -37.5%;
- -height: 50%;
- -
- -overflow: auto
- -}
- -
- -#darke {
- -display: none;
- -position: fixed;
- -z-index: 1999;
- -width: 100%;
- -height: 100%;
- -margin: -8.3px;
- -}
- -
- -#inside {
- -position: relative;
- -top: 5px;
- -font-family: sans-serif;
- -text-align: center;
- -padding: 0px;
- -width: 100%;
- -display: none;
- -}
- -
- -.header {
- -position: fixed;
- -top: -8px;
- -background-color: #111111;
- -text-align: center;
- -width: 100%;
- -margin: -8.5px;
- -font-family: sans-serif;
- -font-size: 20px;
- -}
- -
- -		.a-yellow:hover {
- -         color: yellow;
- -      }	
- -	  
- -	  .a-orange:hover {
- -         color: orange;
- -      }	
- -	  
- -	  .a-red:hover {
- -         color: red;
- -      }	
- -	  
- -	  .a-blue:hover {
- -         color: blue;
- -      }	
- -	  
- -	  .a-purple:hover {
- -         color: purple;
- -      }	
- -	  
- -	  .a-green:hover {
- -         color: green;
- -      }
- -
- -a {
- -		-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
- -		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
- -		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
- -		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
- -		
- -		text-decoration: none;
- -		color: inherit;
- -	}
- -	
- -		a:hover {
- -         color: white;
- -      }
- -
- -#test {
- -
- -animation-name: zoom;
- -animation-duration: 0.6s;
- -
- -font-family: sans-serif;
- -z-index: 41;
- -position: fixed;
- -top: 20%;
- -bottom: 50%;
- -
- -display: none;
- -text-align: center;
- -background-color: white;
- -
- -border-radius: 25px;
- -
- -width: 75%;
- -position: fixed;
- -left: 50%;
- -margin-left: -37.5%;
- -height: 50%;
- -
- -overflow: auto
- -}
- -
- -#dark {
- -display: none;
- -position: fixed;
- -top: 0px;
- -z-index: 40;
- -width: 200%;
- -height: 200%;
- -margin: -8.3px;
- -}
- -
- -#user {
- -position: relative;
- -top: 5px;
- -font-family: sans-serif;
- -text-align: center;
- -padding: 0px;
- -width: 100%;
- -}
- -
- -ul, ol {
- -list-style-type: none;
- -margin: 0px;
- -padding: 0px;
- -}
- -
- -#npassword, #renpassword, #nname {
- -width: 80%;
- -}
- -
- -#splitter {
- -background-color: gray;
- -width: 100%;
- -height: 1px;
- -margin-top: 25px;
- -}
- -
- -#about {
- -animation-name: zoom;
- -animation-duration: 0.6s;
- -
- -font-family: sans-serif;
- -z-index: 41;
- -position: fixed;
- -top: 20%;
- -bottom: 50%;
- -display: none;
- -text-align: center;
- -background-color: white;
- -
- -border-radius: 25px;
- -
- -width: 75%;
- -position: fixed;
- -left: 50%;
- -margin-left: -37.5%;
- -height: 50%;
- -
- -overflow: auto
- -}
- -
- -@media all and (orientation:landscape) {
- -#un {
- -font-size: 90%;
- -}
- -#un2 {
- -font-size: 180%;
- -}
- -}
- -
- -@media all and (orientation:portrait) {
- -#un {
- -font-size: 90%;
- -}
- -#un2 {
- -font-size: 180%;
- -}
- -}
- -
- -
- -#insides {
- -position: bottom;
- -top: 150px;
- -z-index: 1;
- -width: 100%
- -height: 100%
- -margin: -8.5px;
- -}
- -
- -#troll {
- -text-align: baseline;
- -color: inherit;
- -position: fixed;
- -display: none;
- -}
- -
- -#gc {
- -position: default;
- -top: 150px;
- -}
- -
- -#un {
- -
- -		-moz-transition: color 0.2s ease-in-out, margin 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
- -		-webkit-transition: color 0.2s ease-in-out, margin 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
- -		-ms-transition: color 0.2s ease-in-out, margin 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
- -		transition: color 0.2s ease-in-out, margin 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
- -
- -border-bottom: 5px solid white;
- -margin-left: 100px;
- -margin-right: 100px;
- -}
- -
- -#un:hover {
- -border-bottom: 6px solid orange;
- -margin-left: 80px;
- -margin-right: 80px;
- -}
- -
- -#un2 {
- -margin-bottom: 0px;
- -}
- -
- -li {
- -border-bottom: 1px solid gray;
- -
- -}
- -
- -body {
- -background-color: #222222;
- -}
- -
- -#cp {
- -font-family: sans-serif;
- -}
- -
- -#his {
- -background-color: white;
- -
- -height: 100px;
- -width: 100%;
- -
- -overflow: auto;
- -}
- -
- -</style>
- -</head>
- -<body>
- -
- -<div class="header">
- -<h2 id="un2"><a class="a-orange" href="contact" title="Contact us">Zochg</a></h2>
- -<p id="un"><a href="contact" class="a-orange">Contact us</a> | <a href="log" class="a-orange">Log</a> | <a href="buy" class="a-orange">Buy</a> | <span id="login" class="s-orange">Online</span> | <span id="bout" class="s-orange">Download</span> | <span id="enter" class="s-orange" onclick="enter();">Login</span> <a href="http://github.io/login" class="a-orange" id="edit" style="display: none;">Edit Website</a></p>
- -</div>
- -
- -<div id="chatbot" onselectstart='return false;'>
- -<label style="cursor:url(curs2.png), auto;">Chatbot</label><a id="ocd" onclick="moof()"><label id="ocd2" style="position: fixed; right: 1; cursor:url(curs2.png), auto;">▲</label></a>
- -<div id="his">
- -</div>
- -<input spellcheck="false" autocomplete="off" type="text" id="chat" placeholder="ask me something!" onkeypress="handle(event)" style="resize: none; width: 216px;"></input><br>
- -<button id="send" onclick="send()">send</button><input type="text" autocomplete="off" id="name" spellcheck="false" placeholder="What is your name?" maxlength="10"></input>
- -</div>
- -
- -<div id="darke">
- -</div>
- -<div id="error">
- -<h3 style="width: 100%; height: 60px; background-color: red; margin-top: -0px; margin-bottom: -50px; color: white;">Error!</h3>
- -<p style="color: white;">Something went wrong!</p>
- -<div id="inside">
- -<ul id="inside">
- -<p id="errDesc">If you see this then theres and error inside and error :P</p>
- -</ul>
- -</div>
- -</div>
- -
- -
- -<div id="dark" style="display: none;">
- -</div>
- -<div id="test" style="display: none;">
- -<h3 style="width: 100%; height: 60px; background-color: #111111; margin-top: -0px; margin-bottom: -50px; color: white;">Online Games</h3>
- -<p style="color: white;">Click to goto game</p>
- -<ul>
- -<li title="Jar Clicker"><a href="http://zochgcom.github.io/jar-clicker/" class="a-orange" id="pjc"><p>Play Jar Clicker</p>
- -<img src="New_jar.png" width="50px" height="50px" alt="Jar Clicker logo"></a>
- -
- -</li>
- -
- -<li title="Evolution Cell"><a href="http://zochgcom.github.io/egar/" class="a-orange" id="eg"><p>Play Evolution Cell</p>
- -<img src="egar.png" width="50px" height="50px" alt="Egar logo"></a>
- -
- -</li>
- -
- -<li title="RIG"><a href="./Games/RIG" class="a-orange" id="eg"><p>Play RIG</p>
- -<img src="RIG.png" width="50px" height="50px" alt="RIG logo"></a>
- -
- -</li>
- -
- -</ul>
- -</div>
- -
- -<div style="display: none;">
- -<div id="user">
- -<ul id="user">
- -<input type="email" id="name" placeholder="Name / Email">
- -<br>
- -
- -<input type="password" id="password" placeholder="Password">
- -<br>
- -<button type="submit" id="log">Login</button>
- -</ul>
- -<div id="splitter"></div>
- -<div id="signup">
- -<ul id="user">
- -<input type="email" id="nname" placeholder="Name / Email">
- -<br>
- -
- -<input type="password" id="npassword" placeholder="Password">
- -<input type="password" id="renpassword" placeholder="Retype password">
- -<br>
- -<button type="submit" id="signup">Signup</button>
- -</ul>
- -</div>
- -</div>
- -
- -</div>
- -
- -<div id="about" style="display: none;">
- -<h3 style="width: 100%; height: 60px; background-color: #111111; margin-top: -0px; margin-bottom: -50px; color: white;" >Download</h3>
- -<p style="color: white;">Here you can download our wierd games</p>
- -<ul>
- -<li title="Download Pe'Kay"><a href="http://download987.mediafireuserdownload.com/g8o2hpww4t8g/pkv9mhmf64cfr6m/Pe%5C%27Kay.zip" download class="a-orange" id="pka"><p>Download Pe'Kay</p></a>
- -<!--pekay tinyurl picture-->
- -<img src="https://tinyurl.com/ybjstzvn" alt="Pe'Kay logo">
- -
- -</li>
- -
- -</ul>
- -</div>
- -
- -<div id="jclick" style="text-align: center; margin-top: 150px; border-radius: 10px; border: 5px solid black; background-color: #111111; color: white; margin-left: 50px; margin-right: 50px;">
- -<h3 style="text-align: center;">Jar Clicker</h3>
- -<img src="jc.png" width="80%" style="text-align: center;" alt="Picture of Jar Clicker">
- -<br>
- -	<a href="http://zochgcom.github.io/jar-clicker" class="a-blue"><h4>Play Jar clicker<h4></a>
- -</div>
- -
- -<!--<script src="./JS/Main.js"></script>-->
- -
- -<script>
- -var chatbot = document.getElementById("chatbot");
- -var rainbow = false;
- -var asked = false;
- -var cColor = 1;
- -var open = false;
- -var open2 = false;
- -var error = false;
- -
- -//Chatbot script
- -
- -if(window.innerWidth <= 800 && window.innerHeight <= 600) {
- -	chatbot.style.height = "162";
- -   }
- -
- - function handle(e){
- -        if(e.keyCode === 13){
- -          send();
- -        }
- -    }
- -
- -var status = 0;
- -
- -var ocd = document.getElementById("ocd");
- -var ocd2 = document.getElementById("ocd2");
- -var chatbot = document.getElementById("chatbot");
- -var his = document.getElementById("his");
- -var text = document.getElementById("chat");
- -var name = document.getElementById("name").value;
- -var nul = "";
- -
- -function send() {
- -if (text.value != nul) {
- -name = document.getElementById("name").value;
- -if (name == nul) {
- -name = "YOU";
- -}
- -
- -var t = document.createTextNode("[" + name + "] " + text.value);
- -var b = document.createElement("br");
- -his.appendChild(t);
- -his.appendChild(b);
- -
- -if (text.value == "hello" || text.value == "hi" || text.value == "helo" || text.value == "hey" || text.value == "heya") {
- -if (name != "YOU") {
- -var t = document.createTextNode("[BOT] Hello " + name + "!");
- -var b = document.createElement("br");
- -his.appendChild(t);
- -his.appendChild(b);
- -} else {
- -var t = document.createTextNode("[BOT] Hello User!");
- -var b = document.createElement("br");
- -his.appendChild(t);
- -his.appendChild(b);
- -}
- -} else if (text.value == "are you real" || text.value == "are u real" || text.value == "r you real" || text.value == "r u real" || text.value == "are you a real person?" || text.value == "are you real?" || text.value == "are u real?" || text.value == "r you real?" || text.value == "r u real?" || text.value == "are you a real person") {
- -var t = document.createTextNode("[BOT] No im not real. Im just here to help you!");
- -var b = document.createElement("br");
- -his.appendChild(t);
- -his.appendChild(b);
- -} else if (text.value == "games") {
- -var t = document.createTextNode("[BOT] Online or Downloadable?");
- -var b = document.createElement("br");
- -
- -his.appendChild(t);
- -his.appendChild(b);
- -
- -asked = true;
- -
- -} else if (text.value == "online" && asked == true || text.value == "Online" && asked == true) {
- -
- -var t = document.createTextNode("[BOT] Theese are some of our Online games!");
- -var b = document.createElement("br");
- -
- -his.appendChild(t);
- -his.appendChild(b);
- -
- -login();
- -asked = false;
- -
- -} else if (text.value == "Downloadable" && asked == true || text.value == "downloadable" && asked == true) {
- -var t = document.createTextNode("[BOT] Theese are some of our Downloadable games!");
- -var b = document.createElement("br");
- -
- -his.appendChild(t);
- -his.appendChild(b);
- -about();
- -asked = false;
- -} else if (text.value == "clear") {
- -
- -clear();
- -
- -} else if (text.value == "Who made you" || text.value == "who made you" || text.value == "Who made u" || text.value == "who made u" || text.value == "Who made you?" || text.value == "who made you?" || text.value == "Who made u?" || text.value == "who made u?") {
- -var t = document.createTextNode("[BOT] Oggy and Spoody made me.");
- -var g = document.createTextNode("contact them with 'contact us'");
- -var b = document.createElement("br");
- -
- -his.appendChild(t);
- -his.appendChild(b);
- -his.appendChild(g);
- -} else if (text.value == "color") {
- -var t = document.createTextNode("[BOT] You can change the");
- -var c = document.createElement("br");
- -var g = document.createTextNode("current color. its currently " + cColor);
- -var b = document.createElement("br");
- -
- -his.appendChild(t);
- -his.appendChild(b);
- -his.appendChild(g);
- -his.appendChild(c);
- -} else if (text.value == "color 2") {
- -cColor = 2;
- -var t = document.createTextNode("[BOT] You changed the color");
- -var c = document.createElement("br");
- -var g = document.createTextNode("current color is now " + cColor + " or red");
- -var b = document.createElement("br");
- -
- -his.appendChild(t);
- -his.appendChild(b);
- -his.appendChild(g);
- -his.appendChild(c);
- -chatbot.style.backgroundColor = "#ff4444";
- -} else if (text.value == "color 3") {
- -cColor = 3;
- -var t = document.createTextNode("[BOT] You changed the color");
- -var c = document.createElement("br");
- -var g = document.createTextNode("current color is now " + cColor + " or green");
- -var b = document.createElement("br");
- -
- -his.appendChild(t);
- -his.appendChild(b);
- -his.appendChild(g);
- -his.appendChild(c);
- -chatbot.style.backgroundColor = "44ff44";
- -} else if (text.value == "color 4") {
- -cColor = 4;
- -var t = document.createTextNode("[BOT] You changed the color");
- -var c = document.createElement("br");
- -var g = document.createTextNode("current color is now " + cColor + " or blue");
- -var b = document.createElement("br");
- -
- -his.appendChild(t);
- -his.appendChild(b);
- -his.appendChild(g);
- -his.appendChild(c);
- -chatbot.style.backgroundColor = "#4444ff";
- -} else if (text.value == "color 1") {
- -cColor = 1;
- -var t = document.createTextNode("[BOT] You changed the color");
- -var c = document.createElement("br");
- -var g = document.createTextNode("current color is now " + cColor + " or gray");
- -var b = document.createElement("br");
- -
- -his.appendChild(t);
- -his.appendChild(b);
- -his.appendChild(g);
- -his.appendChild(c);
- -chatbot.style.backgroundColor = "#444444";
- -} else if (text.value == "help") {
- -var a = document.createTextNode("Commands:");
- -var b2 = document.createElement("br");
- -var aa = document.createTextNode("- Color [1-4]");
- -var b3 = document.createElement("br");
- -var ab = document.createTextNode("- Clear");
- -var br = document.createElement("br");
- -var b = document.createTextNode("Dynamic answers:");
- -var b4 = document.createElement("br");
- -var ba = document.createTextNode("- games");
- -var b5 = document.createElement("br");
- -var bb = document.createTextNode("- hello/hi");
- -var b6 = document.createElement("br");
- -
- -his.appendChild(a);
- -his.appendChild(b2);
- -his.appendChild(aa);
- -his.appendChild(b3);
- -his.appendChild(ab);
- -his.appendChild(br);
- -his.appendChild(b);
- -his.appendChild(b4);
- -his.appendChild(ba);
- -his.appendChild(b5);
- -his.appendChild(bb);
- -his.appendChild(b6);
- -
- -} else {
- -var answer = Math.floor((Math.random() * 10) + 1);
- -}
- -
- -if (answer == 1) {
- -var t = document.createTextNode("[BOT] Hello User!");
- -var b = document.createElement("br");
- -his.appendChild(t);
- -his.appendChild(b);
- -} else if (answer == 2) {
- -var t = document.createTextNode("[BOT] Im glad you asked!");
- -var b = document.createElement("br");
- -his.appendChild(t);
- -his.appendChild(b);
- -} else if (answer == 3) {
- -var t = document.createTextNode("[BOT] See progress in the log!");
- -var b = document.createElement("br");
- -his.appendChild(t);
- -his.appendChild(b);
- -} else if (answer == 4) {
- -var t = document.createTextNode("[BOT] I AM AUTONEMOUS!!");
- -var b = document.createElement("br");
- -his.appendChild(t);
- -his.appendChild(b);
- -} else if (answer == 5) {
- -var t = document.createTextNode("[BOT] Unsubscribe to alexfarlig NOW!!!!111!");
- -var b = document.createElement("br");
- -his.appendChild(t);
- -his.appendChild(b);
- -} else if (answer == 6) {
- -var t = document.createTextNode("[BOT] chocolate cake is way");
- -var t2 = document.createTextNode("better than strawberry icecream!!");
- -var b = document.createElement("br");
- -his.appendChild(t);
- -his.appendChild(b);
- -his.appendChild(t2);
- -} else if (answer == 7) {
- -var t = document.createTextNode("[BOT] My name is Jeff!");
- -var b = document.createElement("br");
- -his.appendChild(t);
- -his.appendChild(b);
- -} else if (answer == 8) {
- -var t = document.createTextNode("[BOT] Nobody earns from nobody's work!");
- -var b = document.createElement("br");
- -his.appendChild(t);
- -his.appendChild(b);
- -} else if (answer == 9) {
- -var t = document.createTextNode("[BOT] Pi loves Pie but Pie doesen't love Pi!");
- -var b = document.createElement("br");
- -his.appendChild(t);
- -his.appendChild(b);
- -} else if (answer == 10) {
- -var t = document.createTextNode("[BOT] i am random :P");
- -var b = document.createElement("br");
- -his.appendChild(t);
- -his.appendChild(b);
- -}
- -
- -
- -function clear() {
- -for (x = 0; x <= 1000; x++) {
- -var b = document.createElement("br");
- -his.appendChild(b);
- -}
- -}
- -
- -text.value = "";
- -
- -var b = document.createElement("br");
- -his.appendChild(b);
- -
- -his.scrollTop = his.scrollHeight;
- -chatbot.scrollTop = chatbot.scrollHeight;
- -
- -var b = document.createElement("br");
- -
- -} else {
- -alert("please type something!");
- -}
- -}
- -
- -function moof() {
- -
- -if (status == 0) {
- -chatbot.style.bottom = "0px";
- -ocd2.innerHTML = "▼";
- -ocd2.style.right = "1";
- -status++
- -} else if (status == 1) {
- -chatbot.style.bottom = "-150px";
- -ocd2.innerHTML = "▲";
- -ocd2.style.right = "1";
- -status++
- -} else if (status >= 2) {
- -status = 0;
- -chatbot.style.bottom = "0px";
- -ocd2.innerHTML = "▼";
- -ocd2.style.right = "1";
- -status++
- -}
- -}
- -//chatbot script end
- -
- -var online = navigator.onLine;
- -
- -var pka = document.getElementById("pka");
- -
- -var log = document.getElementById("log");
- -
- -var pka = document.getElementById("pka");
- -
- -var btn = document.getElementById("login");
- -
- -var btn2 = document.getElementById("bout");
- -var bout = document.getElementById("about");
- -
- -var dark = document.getElementById("dark");
- -
- -var test =  document.getElementById("test");
- -
- -/*pka.onclick = function() {nu()}
- -
- -function nu() {
- -alert("not working rn");
- -}*/
- -
- -btn.onclick = function() {login()};
- -
- -dark.onclick = function() {close()};
- -
- -log.onclick = function() {log()};
- -
- -btn2.onclick = function() {about()};
- -
- -function login() {
- -
- -
- -if (open == false) {
- -test.style.display = "block";
- -dark.style.display = "block";
- -
- -document.getElementById("dark").style.backgroundColor = "#000000";
- -document.getElementById("dark").style.opacity = "0.25";
- -open = true;
- -
- -} else {
- -
- -test.style.display = "none";
- -dark.style.display = "none";
- -
- -open = false
- -
- -}
- -
- -}
- -
- -function close() {
- -
- -test.style.display = "none";
- -dark.style.display = "none";
- -bout.style.display = "none";
- -
- -open = false
- -open2 = false
- -
- -}
- -
- -function log() {
- -
- -var naem = document.getElementById("name").value;
- -
- -var pass = document.getElementById("password").value;
- -
- -if (naem == "admin") {
- -window.location = "http://zochg.ga";
- -
- -} else {
- -
- -alert("wrong");
- -
- -}
- -}
- -
- -function about() {
- -
- -
- -if (open2 == false) {
- -bout.style.display = "block";
- -dark.style.display = "block";
- -
- -
- -document.getElementById("dark").style.backgroundColor = "#000000";
- -document.getElementById("dark").style.opacity = "0.25";
- -
- -open2 = true;
- -
- -} else {
- -
- -bout.style.display = "none";
- -dark.style.display = "none";
- -
- -open2 = false
- -
- -}
- -
- -}
- -
- -var err = document.getElementById("errDesc");
- -
- -if (error == true) {
- -
- -test.style.display = "none";
- -bout.style.display = "none";
- -
- -document.getElementById("error").style.display = "block";
- -document.getElementById("darke").style.display = "block";
- -err.innerHTML = "an error has occured";
- -}
- -
- -//login script
- -function enter() {
- -	var username = prompt("Input username");
- -	var password = prompt("Input password");
- -	
- -	if (username == "admin" && password == "wordpass123") {
- -		alert("Logged in");
- -		
- -		document.cookie = "logged in=1"
- -		document.getElementById("edit").style.display = "block";
- -	} else if (confirm("Wrong login! Try again.")){
- -		enter();
- -	}
- -}
- -
- -//anti right clicker/
- -document.addEventListener('contextmenu', event => event.preventDefault());
- -
- -</script>
- -
- -</body></html>
+<html><head>
+<link rel="shortcut icon" href="lol.ico"/>
+<title>         Zochg</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+html {
+font-family: sans-serif;
+	}
+
+#login, #bout:hover {
+cursor: url(curs2.png), auto;
+}
+
+		.s-yellow:hover {
+         color: yellow;
+      }	
+	  
+	  .s-orange:hover {
+         color: orange;
+      }	
+	  
+	  .s-red:hover {
+         color: red;
+      }	
+  
+	  .s-blue:hover {
+         color: blue;
+      }	
+	  
+	  .s-purple:hover {
+         color: purple;
+      }	
+  
+	  .s-green:hover {
+         color: green;
+     }
+span {
+		-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		
+		text-decoration: none;
+		color: inherit;
+	}
+
+button {
+border-radius: 4px;
+border: 2px solid gray;
+background-color: white
+}
+
+button:hover {
+background-color: #666666; 
+cursor: url(curs2.png), auto;
+}
+
+#chatbot {
+font-family: sans-serif;
+ -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+ -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+ transition: all 0.4s ease;
+border: 1px solid black;
+border-bottom: 2px solid black;
+border-radius: 6px;
+background-color: #444444;
+padding: 5px;
+position: fixed;
+z-index: 5;
+right: 0;
+bottom: -150px;
+width: 216px;
+height: 160px;
+}
+
+#name {
+width: 171px;
+margin-top: 0px;
+margin-bottom: 50px;
+}
+
+#send {
+width: 45px;
+margin-top: 0px;
+margin-bottom: 50px;
+}
+
+ #cp {
+
+position: fixed;
+bottom: -5px;
+opacity: 0.75;
+background-color: #999999;
+border-radius: 4px
+
+}
+
+html {
+
+cursor:url(curs.png), auto;
+
+}
+
+a {
+
+cursor:url(curs2.png), auto;
+
+}
+
+.header {
+color: white;
+}
+
+@keyframes zoom {
+from {-webkit-transform: scale(0)} 
+to {-webkit-transform: scale(1)}
+}
+
+::-webkit-scrollbar {
+
+display: none
+
+ }
+
+::-webkit-scrollbar-thumb {
+
+display: none;
+
+}
+
+#error {
+
+animation-name: zoom;
+animation-duration: 0.6s;
+
+font-family: sans-serif;
+z-index: 99000;
+position: fixed;
+top: 20%;
+display: none;
+text-align: center;
+background-color: white;
+border: 1px solid red;
+
+border-radius: 25px;
+
+width: 75%;
+position: fixed;
+left: 50%;
+margin-left: -37.5%;
+height: 50%;
+
+overflow: auto
+}
+
+#darke {
+display: none;
+position: fixed;
+z-index: 1999;
+width: 100%;
+height: 100%;
+margin: -8.3px;
+}
+
+#inside {
+position: relative;
+top: 5px;
+font-family: sans-serif;
+text-align: center;
+padding: 0px;
+width: 100%;
+display: none;
+}
+
+.header {
+position: fixed;
+top: -8px;
+background-color: #111111;
+text-align: center;
+width: 100%;
+margin: -8.5px;
+font-family: sans-serif;
+font-size: 20px;
+}
+
+		.a-yellow:hover {
+         color: yellow;
+      }	
+	  
+	  .a-orange:hover {
+         color: orange;
+      }	
+	  
+	  .a-red:hover {
+         color: red;
+      }	
+	  
+	  .a-blue:hover {
+         color: blue;
+      }	
+	  
+	  .a-purple:hover {
+         color: purple;
+      }	
+	  
+	  .a-green:hover {
+         color: green;
+      }
+
+a {
+		-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		
+		text-decoration: none;
+		color: inherit;
+	}
+	
+		a:hover {
+         color: white;
+      }
+
+#test {
+
+animation-name: zoom;
+animation-duration: 0.6s;
+
+font-family: sans-serif;
+z-index: 41;
+position: fixed;
+top: 20%;
+bottom: 50%;
+
+display: none;
+text-align: center;
+background-color: white;
+
+border-radius: 25px;
+
+width: 75%;
+position: fixed;
+left: 50%;
+margin-left: -37.5%;
+height: 50%;
+
+overflow: auto
+}
+
+#dark {
+display: none;
+position: fixed;
+top: 0px;
+z-index: 40;
+width: 200%;
+height: 200%;
+margin: -8.3px;
+}
+
+#user {
+position: relative;
+top: 5px;
+font-family: sans-serif;
+text-align: center;
+padding: 0px;
+width: 100%;
+}
+
+ul, ol {
+list-style-type: none;
+margin: 0px;
+padding: 0px;
+}
+
+#npassword, #renpassword, #nname {
+width: 80%;
+}
+
+#splitter {
+background-color: gray;
+width: 100%;
+height: 1px;
+margin-top: 25px;
+}
+
+#about {
+animation-name: zoom;
+animation-duration: 0.6s;
+
+font-family: sans-serif;
+z-index: 41;
+position: fixed;
+top: 20%;
+bottom: 50%;
+display: none;
+text-align: center;
+background-color: white;
+
+border-radius: 25px;
+
+width: 75%;
+position: fixed;
+left: 50%;
+margin-left: -37.5%;
+height: 50%;
+
+overflow: auto
+}
+
+@media all and (orientation:landscape) {
+#un {
+font-size: 90%;
+}
+#un2 {
+font-size: 180%;
+}
+}
+
+@media all and (orientation:portrait) {
+#un {
+font-size: 90%;
+}
+#un2 {
+font-size: 180%;
+}
+}
+
+
+#insides {
+position: bottom;
+top: 150px;
+z-index: 1;
+width: 100%
+height: 100%
+margin: -8.5px;
+}
+
+#troll {
+text-align: baseline;
+color: inherit;
+position: fixed;
+display: none;
+}
+
+#gc {
+position: default;
+top: 150px;
+}
+
+#un {
+
+		-moz-transition: color 0.2s ease-in-out, margin 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		-webkit-transition: color 0.2s ease-in-out, margin 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		-ms-transition: color 0.2s ease-in-out, margin 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		transition: color 0.2s ease-in-out, margin 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+
+border-bottom: 5px solid white;
+margin-left: 100px;
+margin-right: 100px;
+}
+
+#un:hover {
+border-bottom: 6px solid orange;
+margin-left: 80px;
+margin-right: 80px;
+}
+
+#un2 {
+margin-bottom: 0px;
+}
+
+li {
+border-bottom: 1px solid gray;
+
+}
+
+body {
+background-color: #222222;
+}
+
+#cp {
+font-family: sans-serif;
+}
+
+#his {
+background-color: white;
+
+height: 100px;
+width: 100%;
+
+overflow: auto;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+<h2 id="un2"><a class="a-orange" href="contact" title="Contact us">Zochg</a></h2>
+<p id="un"><a href="contact" class="a-orange">Contact us</a> | <a href="log" class="a-orange">Log</a> | <a href="buy" class="a-orange">Buy</a> | <span id="login" class="s-orange">Online</span> | <span id="bout" class="s-orange">Download</span> | <span id="enter" class="s-orange" onclick="enter();">Login</span> <a href="http://github.io/login" class="a-orange" id="edit" style="display: none;">Edit Website</a></p>
+</div>
+
+<div id="chatbot" onselectstart='return false;'>
+<label style="cursor:url(curs2.png), auto;">Chatbot</label><a id="ocd" onclick="moof()"><label id="ocd2" style="position: fixed; right: 1; cursor:url(curs2.png), auto;">▲</label></a>
+<div id="his">
+</div>
+<input spellcheck="false" autocomplete="off" type="text" id="chat" placeholder="ask me something!" onkeypress="handle(event)" style="resize: none; width: 216px;"></input><br>
+<button id="send" onclick="send()">send</button><input type="text" autocomplete="off" id="name" spellcheck="false" placeholder="What is your name?" maxlength="10"></input>
+</div>
+
+<div id="darke">
+</div>
+<div id="error">
+<h3 style="width: 100%; height: 60px; background-color: red; margin-top: -0px; margin-bottom: -50px; color: white;">Error!</h3>
+<p style="color: white;">Something went wrong!</p>
+<div id="inside">
+<ul id="inside">
+<p id="errDesc">If you see this then theres and error inside and error :P</p>
+</ul>
+</div>
+</div>
+
+
+<div id="dark" style="display: none;">
+</div>
+<div id="test" style="display: none;">
+<h3 style="width: 100%; height: 60px; background-color: #111111; margin-top: -0px; margin-bottom: -50px; color: white;">Online Games</h3>
+<p style="color: white;">Click to goto game</p>
+<ul>
+<li title="Jar Clicker"><a href="http://zochgcom.github.io/jar-clicker/" class="a-orange" id="pjc"><p>Play Jar Clicker</p>
+<img src="New_jar.png" width="50px" height="50px" alt="Jar Clicker logo"></a>
+
+</li>
+
+<li title="Evolution Cell"><a href="http://zochgcom.github.io/egar/" class="a-orange" id="eg"><p>Play Evolution Cell</p>
+<img src="egar.png" width="50px" height="50px" alt="Egar logo"></a>
+
+</li>
+
+<li title="RIG"><a href="./Games/RIG" class="a-orange" id="eg"><p>Play RIG</p>
+<img src="RIG.png" width="50px" height="50px" alt="RIG logo"></a>
+
+</li>
+
+</ul>
+</div>
+
+<div style="display: none;">
+<div id="user">
+<ul id="user">
+<input type="email" id="name" placeholder="Name / Email">
+<br>
+
+<input type="password" id="password" placeholder="Password">
+<br>
+<button type="submit" id="log">Login</button>
+</ul>
+<div id="splitter"></div>
+<div id="signup">
+<ul id="user">
+<input type="email" id="nname" placeholder="Name / Email">
+<br>
+
+<input type="password" id="npassword" placeholder="Password">
+<input type="password" id="renpassword" placeholder="Retype password">
+<br>
+<button type="submit" id="signup">Signup</button>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div id="about" style="display: none;">
+<h3 style="width: 100%; height: 60px; background-color: #111111; margin-top: -0px; margin-bottom: -50px; color: white;" >Download</h3>
+<p style="color: white;">Here you can download our wierd games</p>
+<ul>
+<li title="Download Pe'Kay"><a href="http://download987.mediafireuserdownload.com/g8o2hpww4t8g/pkv9mhmf64cfr6m/Pe%5C%27Kay.zip" download class="a-orange" id="pka"><p>Download Pe'Kay</p></a>
+<!--pekay tinyurl picture-->
+img src="https://tinyurl.com/ybjstzvn" alt="Pe'Kay logo">
+
+</li>
+
+</ul>
+</div>
+
+<div id="jclick" style="text-align: center; margin-top: 150px; border-radius: 10px; border: 5px solid black; background-color: #111111; color: white; margin-left: 50px; margin-right: 50px;">
+<h3 style="text-align: center;">Jar Clicker</h3>
+<img src="jc.png" width="80%" style="text-align: center;" alt="Picture of Jar Clicker">
+<br>
+	<a href="http://zochgcom.github.io/jar-clicker" class="a-blue"><h4>Play Jar clicker<h4></a>
+</div>
+
+<!--<script src="./JS/Main.js"></script>-->
+
+<script>
+var chatbot = document.getElementById("chatbot");
+var rainbow = false;
+var asked = false;
+var cColor = 1;
+var open = false;
+var open2 = false;
+var error = false;
+
+//Chatbot script
+
+if(window.innerWidth <= 800 && window.innerHeight <= 600) {
+	chatbot.style.height = "162";
+   }
+
+ function handle(e){
+        if(e.keyCode === 13){
+          send();
+        }
+    }
+
+var status = 0;
+
+var ocd = document.getElementById("ocd");
+var ocd2 = document.getElementById("ocd2");
+var chatbot = document.getElementById("chatbot");
+var his = document.getElementById("his");
+var text = document.getElementById("chat");
+var name = document.getElementById("name").value;
+var nul = "";
+
+function send() {
+if (text.value != nul) {
+name = document.getElementById("name").value;
+if (name == nul) {
+name = "YOU";
+}
+
+var t = document.createTextNode("[" + name + "] " + text.value);
+var b = document.createElement("br");
+his.appendChild(t);
+his.appendChild(b);
+
+if (text.value == "hello" || text.value == "hi" || text.value == "helo" || text.value == "hey" || text.value == "heya") {
+if (name != "YOU") {
+var t = document.createTextNode("[BOT] Hello " + name + "!");
+var b = document.createElement("br");
+his.appendChild(t);
+his.appendChild(b);
+} else {
+var t = document.createTextNode("[BOT] Hello User!");
+var b = document.createElement("br");
+his.appendChild(t);
+his.appendChild(b);
+}
+} else if (text.value == "are you real" || text.value == "are u real" || text.value == "r you real" || text.value == "r u real" || text.value == "are you a real person?" || text.value == "are you real?" || text.value == "are u real?" || text.value == "r you real?" || text.value == "r u real?" || text.value == "are you a real person") {
+var t = document.createTextNode("[BOT] No im not real. Im just here to help you!");
+var b = document.createElement("br");
+his.appendChild(t);
+his.appendChild(b);
+} else if (text.value == "games") {
+var t = document.createTextNode("[BOT] Online or Downloadable?");
+var b = document.createElement("br");
+
+his.appendChild(t);
+his.appendChild(b);
+
+asked = true;
+
+} else if (text.value == "online" && asked == true || text.value == "Online" && asked == true) {
+
+var t = document.createTextNode("[BOT] Theese are some of our Online games!");
+var b = document.createElement("br");
+
+his.appendChild(t);
+his.appendChild(b);
+
+login();
+asked = false;
+
+} else if (text.value == "Downloadable" && asked == true || text.value == "downloadable" && asked == true) {
+var t = document.createTextNode("[BOT] Theese are some of our Downloadable games!");
+var b = document.createElement("br");
+
+his.appendChild(t);
+his.appendChild(b);
+about();
+asked = false;
+} else if (text.value == "clear") {
+
+clear();
+
+} else if (text.value == "Who made you" || text.value == "who made you" || text.value == "Who made u" || text.value == "who made u" || text.value == "Who made you?" || text.value == "who made you?" || text.value == "Who made u?" || text.value == "who made u?") {
+var t = document.createTextNode("[BOT] Oggy and Spoody made me.");
+var g = document.createTextNode("contact them with 'contact us'");
+var b = document.createElement("br");
+
+his.appendChild(t);
+his.appendChild(b);
+his.appendChild(g);
+} else if (text.value == "color") {
+var t = document.createTextNode("[BOT] You can change the");
+var c = document.createElement("br");
+var g = document.createTextNode("current color. its currently " + cColor);
+var b = document.createElement("br");
+
+his.appendChild(t);
+his.appendChild(b);
+his.appendChild(g);
+his.appendChild(c);
+} else if (text.value == "color 2") {
+cColor = 2;
+var t = document.createTextNode("[BOT] You changed the color");
+var c = document.createElement("br");
+var g = document.createTextNode("current color is now " + cColor + " or red");
+var b = document.createElement("br");
+
+his.appendChild(t);
+his.appendChild(b);
+his.appendChild(g);
+his.appendChild(c);
+chatbot.style.backgroundColor = "#ff4444";
+} else if (text.value == "color 3") {
+cColor = 3;
+var t = document.createTextNode("[BOT] You changed the color");
+var c = document.createElement("br");
+var g = document.createTextNode("current color is now " + cColor + " or green");
+var b = document.createElement("br");
+
+his.appendChild(t);
+his.appendChild(b);
+his.appendChild(g);
+his.appendChild(c);
+chatbot.style.backgroundColor = "44ff44";
+} else if (text.value == "color 4") {
+cColor = 4;
+var t = document.createTextNode("[BOT] You changed the color");
+var c = document.createElement("br");
+var g = document.createTextNode("current color is now " + cColor + " or blue");
+var b = document.createElement("br");
+
+his.appendChild(t);
+his.appendChild(b);
+his.appendChild(g);
+his.appendChild(c);
+chatbot.style.backgroundColor = "#4444ff";
+} else if (text.value == "color 1") {
+cColor = 1;
+var t = document.createTextNode("[BOT] You changed the color");
+var c = document.createElement("br");
+var g = document.createTextNode("current color is now " + cColor + " or gray");
+var b = document.createElement("br");
+
+his.appendChild(t);
+his.appendChild(b);
+his.appendChild(g);
+his.appendChild(c);
+chatbot.style.backgroundColor = "#444444";
+} else if (text.value == "help") {
+var a = document.createTextNode("Commands:");
+var b2 = document.createElement("br");
+var aa = document.createTextNode("- Color [1-4]");
+var b3 = document.createElement("br");
+var ab = document.createTextNode("- Clear");
+var br = document.createElement("br");
+var b = document.createTextNode("Dynamic answers:");
+var b4 = document.createElement("br");
+var ba = document.createTextNode("- games");
+var b5 = document.createElement("br");
+var bb = document.createTextNode("- hello/hi");
+var b6 = document.createElement("br");
+
+his.appendChild(a);
+his.appendChild(b2);
+his.appendChild(aa);
+his.appendChild(b3);
+his.appendChild(ab);
+his.appendChild(br);
+his.appendChild(b);
+his.appendChild(b4);
+his.appendChild(ba);
+his.appendChild(b5);
+his.appendChild(bb);
+his.appendChild(b6);
+
+} else {
+var answer = Math.floor((Math.random() * 10) + 1);
+}
+
+if (answer == 1) {
+var t = document.createTextNode("[BOT] Hello User!");
+var b = document.createElement("br");
+his.appendChild(t);
+his.appendChild(b);
+} else if (answer == 2) {
+var t = document.createTextNode("[BOT] Im glad you asked!");
+var b = document.createElement("br");
+his.appendChild(t);
+his.appendChild(b);
+} else if (answer == 3) {
+var t = document.createTextNode("[BOT] See progress in the log!");
+var b = document.createElement("br");
+his.appendChild(t);
+his.appendChild(b);
+} else if (answer == 4) {
+var t = document.createTextNode("[BOT] I AM AUTONEMOUS!!");
+var b = document.createElement("br");
+his.appendChild(t);
+his.appendChild(b);
+} else if (answer == 5) {
+var t = document.createTextNode("[BOT] Unsubscribe to alexfarlig NOW!!!!111!");
+var b = document.createElement("br");
+his.appendChild(t);
+his.appendChild(b);
+} else if (answer == 6) {
+var t = document.createTextNode("[BOT] chocolate cake is way");
+var t2 = document.createTextNode("better than strawberry icecream!!");
+var b = document.createElement("br");
+his.appendChild(t);
+his.appendChild(b);
+his.appendChild(t2);
+} else if (answer == 7) {
+var t = document.createTextNode("[BOT] My name is Jeff!");
+var b = document.createElement("br");
+his.appendChild(t);
+his.appendChild(b);
+} else if (answer == 8) {
+var t = document.createTextNode("[BOT] Nobody earns from nobody's work!");
+var b = document.createElement("br");
+his.appendChild(t);
+his.appendChild(b);
+} else if (answer == 9) {
+var t = document.createTextNode("[BOT] Pi loves Pie but Pie doesen't love Pi!");
+var b = document.createElement("br");
+his.appendChild(t);
+his.appendChild(b);
+} else if (answer == 10) {
+var t = document.createTextNode("[BOT] i am random :P");
+var b = document.createElement("br");
+his.appendChild(t);
+his.appendChild(b);
+}
+
+
+function clear() {
+for (x = 0; x <= 1000; x++) {
+var b = document.createElement("br");
+his.appendChild(b);
+}
+}
+
+text.value = "";
+
+var b = document.createElement("br");
+his.appendChild(b);
+
+his.scrollTop = his.scrollHeight;
+chatbot.scrollTop = chatbot.scrollHeight;
+
+var b = document.createElement("br");
+
+} else {
+alert("please type something!");
+}
+}
+
+function moof() {
+
+if (status == 0) {
+chatbot.style.bottom = "0px";
+ocd2.innerHTML = "▼";
+ocd2.style.right = "1";
+status++
+} else if (status == 1) {
+chatbot.style.bottom = "-150px";
+ocd2.innerHTML = "▲";
+ocd2.style.right = "1";
+status++
+} else if (status >= 2) {
+status = 0;
+chatbot.style.bottom = "0px";
+ocd2.innerHTML = "▼";
+ocd2.style.right = "1";
+status++
+}
+}
+//chatbot script end
+
+var online = navigator.onLine;
+
+var pka = document.getElementById("pka");
+
+var log = document.getElementById("log");
+
+var pka = document.getElementById("pka");
+
+var btn = document.getElementById("login");
+
+var btn2 = document.getElementById("bout");
+var bout = document.getElementById("about");
+
+var dark = document.getElementById("dark");
+
+var test =  document.getElementById("test");
+
+/*pka.onclick = function() {nu()}
+
+function nu() {
+alert("not working rn");
+}*/
+
+btn.onclick = function() {login()};
+
+dark.onclick = function() {close()};
+
+log.onclick = function() {log()};
+
+btn2.onclick = function() {about()};
+
+function login() {
+
+
+if (open == false) {
+test.style.display = "block";
+dark.style.display = "block";
+
+document.getElementById("dark").style.backgroundColor = "#000000";
+document.getElementById("dark").style.opacity = "0.25";
+open = true;
+
+} else {
+
+test.style.display = "none";
+dark.style.display = "none";
+
+open = false
+
+}
+
+}
+
+function close() {
+
+test.style.display = "none";
+dark.style.display = "none";
+bout.style.display = "none";
+
+open = false
+open2 = false
+
+}
+
+function log() {
+
+var naem = document.getElementById("name").value;
+
+var pass = document.getElementById("password").value;
+
+if (naem == "admin") {
+window.location = "http://zochg.ga";
+
+} else {
+
+alert("wrong");
+
+}
+}
+
+function about() {
+
+
+if (open2 == false) {
+bout.style.display = "block";
+dark.style.display = "block";
+
+
+document.getElementById("dark").style.backgroundColor = "#000000";
+document.getElementById("dark").style.opacity = "0.25";
+
+open2 = true;
+
+} else {
+
+bout.style.display = "none";
+dark.style.display = "none";
+
+open2 = false
+
+}
+
+}
+
+var err = document.getElementById("errDesc");
+
+if (error == true) {
+
+test.style.display = "none";
+bout.style.display = "none";
+
+document.getElementById("error").style.display = "block";
+document.getElementById("darke").style.display = "block";
+err.innerHTML = "an error has occured";
+}
+
+//login script
+function enter() {
+	var username = prompt("Input username");
+	var password = prompt("Input password");
+	
+	if (username == "admin" && password == "wordpass123") {
+		alert("Logged in");
+		
+		document.cookie = "logged in=1"
+		document.getElementById("edit").style.display = "block";
+	} else if (confirm("Wrong login! Try again.")){
+		enter();
+	}
+}
+
+//anti right clicker/
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+</script>
+
+</body></html>
