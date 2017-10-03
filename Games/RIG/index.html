@@ -406,37 +406,16 @@ width: 35px;
     <div align="center"> 
 	<!--This draws the Canvas on the webpage -->
       <embed id="canvas" width="480" height="320" src="game.swf" quality="low" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash">
-	<h3 style="font-family: 'trench', sans-serif; margin-top: 0px; margin-bottom: 0px;">Music controls</h3>
-		<button id="playBtn" style="text-align: center;" onclick="playPause()">&#10074;&#10074;</button>
 	</div>
 		<div align="center" style="btext-align: center;">
 		<br><br>
 	<span style="font-family: 'trench', sans-serif;"><b>Wan't to play offline?</b></span>
 	<br>
-	<a href="./RIG.exe" download><button id="download" title="Download RIG.exe">DOWNLOAD <span style="color: gray;">RIG.exe 1.2Mb</span></button></a>
+	<a href="./RIG.exe" download><button id="download" title="Download RIG.exe">DOWNLOAD <span style="color: gray;">RIG.exe 5.5Mb</span></button></a>
 </div>
-<audio autoplay loop id="audio">
-  <source src="music.mp3" type="audio/mpeg">
-Music is not available in your browser.
-</audio>
-	 
+
 	 
 <p class="Copyright">© 2014 - 2016 Zochg inc. all rights reserved</p>
-
-	 <script>
-var myVideo = document.getElementById("audio"); 
-var play = document.getElementById("playBtn"); 
-		 
-function playPause() { 
-    if (myVideo.paused) {
-        myVideo.play(); 
-	play.innerHTML = "&#10074;&#10074;";
-} else { 
-        myVideo.pause(); 
-	play.innerHTML = "&#9658;";
-}
-}
-</script>
 
  </body>
 </html>
