@@ -919,6 +919,15 @@ function enter() {
 //anti right clicker/
 document.addEventListener('contextmenu', event => event.preventDefault());
 
+//detect mobile device
+function detectMob() {
+if(window.innerWidth <= 800 && window.inerHeught <= 600) {
+window.location = "mobile";
+} else {
+
+}
+}
+
 </script>
 
 </body></html>
