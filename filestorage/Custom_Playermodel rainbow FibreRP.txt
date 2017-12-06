@@ -1,0 +1,311 @@
+[1] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["Velocity"] = 10,
+						["UniqueID"] = "913331506",
+						["DieTime"] = 0.5,
+						["Bounce"] = 4.9,
+						["FireDelay"] = 0.01,
+						["NumberParticles"] = 2,
+						["EndSize"] = 1,
+						["ClassName"] = "particles",
+						["Position"] = Vector(14.15340423584, 0.00092315673828125, -2.44580078125),
+						["Spread"] = 0.5,
+						["Material"] = "particles/flamelet5",
+						["Angles"] = Angle(-2.8387974452926e-05, -123.47611999512, 4.3542455387069e-05),
+						["StartSize"] = 5,
+						["Gravity"] = Vector(0, 0, 30),
+					},
+				},
+			},
+			["self"] = {
+				["Angles"] = Angle(0, 0, -80),
+				["UniqueID"] = "779968517",
+				["ClassName"] = "bone",
+				["Bone"] = "left hand",
+				["Name"] = "left hand",
+				["EditorExpand"] = true,
+			},
+		},
+		[2] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ClassName"] = "entity",
+				["FallApartOnDeath"] = true,
+				["UniqueID"] = "676153295",
+				["DrawWeapon"] = false,
+				["EditorExpand"] = true,
+			},
+		},
+		[3] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["Velocity"] = 10,
+						["UniqueID"] = "3610047074",
+						["DieTime"] = 0.5,
+						["FireDelay"] = 0.01,
+						["Material"] = "particles/flamelet5",
+						["EndSize"] = 1,
+						["ClassName"] = "particles",
+						["Position"] = Vector(15.432609558105, -0.43524169921875, 1.9248046875),
+						["Spread"] = 0.5,
+						["EditorExpand"] = true,
+						["Angles"] = Angle(-2.8387974452926e-05, -123.47611999512, 4.3542455387069e-05),
+						["StartSize"] = 5,
+						["Gravity"] = Vector(0, 0, 30),
+					},
+				},
+			},
+			["self"] = {
+				["Angles"] = Angle(0, 0, 80),
+				["UniqueID"] = "2260488556",
+				["ClassName"] = "bone",
+				["Bone"] = "right hand",
+				["Name"] = "right hand",
+				["EditorExpand"] = true,
+			},
+		},
+		[4] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ClassName"] = "animation",
+				["UniqueID"] = "840441730",
+				["SequenceName"] = "ragdoll",
+			},
+		},
+		[5] = {
+			["children"] = {
+			},
+			["self"] = {
+				["Event"] = "is_in_noclip",
+				["ClassName"] = "event",
+				["Invert"] = true,
+				["UniqueID"] = "855887631",
+			},
+		},
+	},
+	["self"] = {
+		["EditorExpand"] = true,
+		["UniqueID"] = "2599618506",
+		["ClassName"] = "group",
+		["Name"] = "Noclip",
+		["Description"] = "add parts to me!",
+	},
+},
+[2] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+			},
+			["self"] = {
+				["Position"] = Vector(19.077972412109, 2.3899536132813, -3.4679565429688),
+				["UniqueID"] = "1928906265",
+				["Size"] = 0.5,
+				["EditorExpand"] = true,
+				["UseWeaponColor"] = true,
+				["Angles"] = Angle(0, -90, 0),
+				["ClassName"] = "model",
+				["Bone"] = "left thigh",
+				["Model"] = "models/hunter/blocks/cube025x075x025.mdl",
+				["Material"] = "models/debug/debugwhite",
+			},
+		},
+		[2] = {
+			["children"] = {
+			},
+			["self"] = {
+				["Position"] = Vector(3.0499999523163, -1.5410000085831, 1.2849999666214),
+				["UniqueID"] = "1412776790",
+				["Size"] = 0.35,
+				["EditorExpand"] = true,
+				["UseWeaponColor"] = true,
+				["Angles"] = Angle(0, -90, 0),
+				["ClassName"] = "model",
+				["Bone"] = "right hand",
+				["Model"] = "models/hunter/blocks/cube025x025x025.mdl",
+				["Material"] = "models/debug/debugwhite",
+			},
+		},
+		[3] = {
+			["children"] = {
+			},
+			["self"] = {
+				["Position"] = Vector(12.999755859375, 0.000579833984375, -1.2300000190735),
+				["UniqueID"] = "87706430",
+				["Size"] = 0.35,
+				["EditorExpand"] = true,
+				["UseWeaponColor"] = true,
+				["Angles"] = Angle(0, -90, 0),
+				["ClassName"] = "model",
+				["Bone"] = "right upperarm",
+				["Model"] = "models/hunter/blocks/cube025x075x025.mdl",
+				["Material"] = "models/debug/debugwhite",
+			},
+		},
+		[4] = {
+			["children"] = {
+			},
+			["self"] = {
+				["Position"] = Vector(9, 0.00250244140625, 0),
+				["UniqueID"] = "1050806127",
+				["Size"] = 0.25,
+				["EditorExpand"] = true,
+				["UseWeaponColor"] = true,
+				["Angles"] = Angle(0, -90, 0),
+				["ClassName"] = "model",
+				["Bone"] = "right forearm",
+				["Model"] = "models/hunter/blocks/cube025x075x025.mdl",
+				["Material"] = "models/debug/debugwhite",
+			},
+		},
+		[5] = {
+			["children"] = {
+			},
+			["self"] = {
+				["Position"] = Vector(19.079635620117, 1.7316284179688, -2.111083984375),
+				["UniqueID"] = "1334996167",
+				["Size"] = 0.45,
+				["EditorExpand"] = true,
+				["UseWeaponColor"] = true,
+				["Angles"] = Angle(0, -90, 0),
+				["ClassName"] = "model",
+				["Bone"] = "right calf",
+				["Model"] = "models/hunter/blocks/cube025x075x025.mdl",
+				["Material"] = "models/debug/debugwhite",
+			},
+		},
+		[6] = {
+			["children"] = {
+			},
+			["self"] = {
+				["Position"] = Vector(19.079635620117, 1.7316284179688, -2.111083984375),
+				["UniqueID"] = "3135039372",
+				["Size"] = 0.45,
+				["EditorExpand"] = true,
+				["UseWeaponColor"] = true,
+				["Angles"] = Angle(0, -90, 0),
+				["ClassName"] = "model",
+				["Bone"] = "left calf",
+				["Model"] = "models/hunter/blocks/cube025x075x025.mdl",
+				["Material"] = "models/debug/debugwhite",
+			},
+		},
+		[7] = {
+			["children"] = {
+			},
+			["self"] = {
+				["Position"] = Vector(-0.00034332275390625, 0, 0),
+				["ClassName"] = "entity",
+				["HideEntity"] = true,
+				["UniqueID"] = "3091831110",
+			},
+		},
+		[8] = {
+			["children"] = {
+			},
+			["self"] = {
+				["UniqueID"] = "3194323010",
+				["Scale"] = Vector(0.60000002384186, 1, 1),
+				["Material"] = "models/debug/debugwhite",
+				["Size"] = 0.5,
+				["Angles"] = Angle(0, -90, 0),
+				["ClassName"] = "model",
+				["Bone"] = "spine 2",
+				["Model"] = "models/hunter/blocks/cube05x1x05.mdl",
+				["UseWeaponColor"] = true,
+			},
+		},
+		[9] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ClassName"] = "model",
+				["Material"] = "models/debug/debugwhite",
+				["UseWeaponColor"] = true,
+				["Size"] = 0.75,
+				["Position"] = Vector(0.63318634033203, 2.3612365722656, 0.008544921875),
+				["UniqueID"] = "955923475",
+				["Model"] = "models/hunter/blocks/cube025x025x025.mdl",
+				["Angles"] = Angle(-8.3909944805782e-06, 9, 3.4150946248701e-06),
+			},
+		},
+		[10] = {
+			["children"] = {
+			},
+			["self"] = {
+				["Position"] = Vector(9, 0, -2.5),
+				["UniqueID"] = "299908862",
+				["Material"] = "models/debug/debugwhite",
+				["Size"] = 0.25,
+				["Angles"] = Angle(0, -90, 0),
+				["ClassName"] = "model",
+				["Bone"] = "left forearm",
+				["Model"] = "models/hunter/blocks/cube025x075x025.mdl",
+				["UseWeaponColor"] = true,
+			},
+		},
+		[11] = {
+			["children"] = {
+			},
+			["self"] = {
+				["Position"] = Vector(1.8907470703125, -1.5335083007813, -1.4503784179688),
+				["UniqueID"] = "4083231184",
+				["Size"] = 0.35,
+				["EditorExpand"] = true,
+				["UseWeaponColor"] = true,
+				["Angles"] = Angle(0, -90, 0),
+				["ClassName"] = "model",
+				["Bone"] = "left hand",
+				["Model"] = "models/hunter/blocks/cube025x025x025.mdl",
+				["Material"] = "models/debug/debugwhite",
+			},
+		},
+		[12] = {
+			["children"] = {
+			},
+			["self"] = {
+				["Position"] = Vector(13.001281738281, -0.0029296875, -2.5),
+				["UniqueID"] = "3572801739",
+				["Material"] = "models/debug/debugwhite",
+				["Size"] = 0.35,
+				["Angles"] = Angle(0, -90, 0),
+				["ClassName"] = "model",
+				["Bone"] = "left upperarm",
+				["Model"] = "models/hunter/blocks/cube025x075x025.mdl",
+				["UseWeaponColor"] = true,
+			},
+		},
+		[13] = {
+			["children"] = {
+			},
+			["self"] = {
+				["Position"] = Vector(19.079635620117, 1.7316284179688, -2.111083984375),
+				["UniqueID"] = "2963509664",
+				["Size"] = 0.5,
+				["EditorExpand"] = true,
+				["UseWeaponColor"] = true,
+				["Angles"] = Angle(0, -90, 0),
+				["ClassName"] = "model",
+				["Bone"] = "right thigh",
+				["Model"] = "models/hunter/blocks/cube025x075x025.mdl",
+				["Material"] = "models/debug/debugwhite",
+			},
+		},
+	},
+	["self"] = {
+		["Name"] = "Playermodel",
+		["ClassName"] = "group",
+		["UniqueID"] = "2067668670",
+		["EditorExpand"] = true,
+	},
+},
