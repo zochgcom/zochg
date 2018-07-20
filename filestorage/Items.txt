@@ -1,1 +1,1 @@
-"clickUp™", "100", "clickup.png"
+"clickUp™","100","clickup.png"
