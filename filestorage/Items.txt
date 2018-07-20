@@ -1,1 +1,1 @@
-{"clickUp™", "100", clickupUrl}
+"clickUp™", "100", "clickup.png"
